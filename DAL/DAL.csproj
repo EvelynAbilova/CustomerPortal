@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="Extensions.Configuration" Version="0.0.4" />
+    <PackageReference Include="Npgsql" Version="8.0.2" />
+    <PackageReference Include="Npgsql.ConfigureConnection" Version="0.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BOL\BOL.csproj" />
+  </ItemGroup>
+
 </Project>

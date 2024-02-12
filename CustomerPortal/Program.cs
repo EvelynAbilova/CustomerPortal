@@ -1,7 +1,15 @@
+using BLL.LogicServices;
+using DAL.DataContext;
+using DAL.DataServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IStudentsLogic, StudentsLogic>();
+builder.Services.AddSingleton<IStudentsDAL, StudentsDAL>();
+builder.Services.AddSingleton<IDapperOrmHelper, DapperOrmHelper>();
+
 
 var app = builder.Build();
 
